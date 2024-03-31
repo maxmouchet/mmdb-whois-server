@@ -3,7 +3,7 @@ Serve MMDB files over the WHOIS protocol.
 
 ## Usage
 
-First download the free [Country & ASN database](https://ipinfo.io/products/free-ip-database) from [<img src="https://ipinfo.io/static/ipinfo-small.svg" alt="IPinfo" width="12"/> IPinfo](https://ipinfo.io):
+First download an MMDB file, for example the free [Country & ASN database](https://ipinfo.io/products/free-ip-database) from [<img src="https://ipinfo.io/static/ipinfo-small.svg" alt="IPinfo" width="12"/> IPinfo](https://ipinfo.io):
 
 ```bash
 ipinfo download country-asn -f mmdb
