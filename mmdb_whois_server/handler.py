@@ -10,15 +10,9 @@ class Handler:
         self.footer = footer
 
     async def handle(self, reader, writer):
-        buffer = b""
-        while True:
-            if data := await reader.read(4096):
-                buffer += data
-                if SEPARATOR in data:
-                    buffer = buffer.split(SEPARATOR)[0]
-                    break
+        data = await reader.readuntil(SEPARATOR)
+        query = data.split(SEPARATOR)[0].decode()
 
-        query = buffer.decode()
         remote = writer.get_extra_info("peername")
         logging.info("Request from %s:%s -- %s", remote[0], remote[1], query)
 
