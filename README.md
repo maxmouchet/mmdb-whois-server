@@ -1,6 +1,8 @@
 # mmdb-whois-server
 Serve MMDB files over the WHOIS protocol.
 
+See the following post for more information: https://community.ipinfo.io/t/create-a-whois-server-from-scratch/5574
+
 ## Usage
 
 First download an MMDB file, for example the free [Country & ASN database](https://ipinfo.io/products/free-ip-database) from [<img src="https://ipinfo.io/static/ipinfo-small.svg" alt="IPinfo" width="12"/> IPinfo](https://ipinfo.io):
