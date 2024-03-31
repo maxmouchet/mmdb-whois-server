@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "mmdb-whois-server"
+version = "0.1.0"
+description = "Serve MMDB files over the WHOIS protocol."
+authors = ["Maxime Mouchet <max@maxmouchet.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+maxminddb = "^2.6.0"
+
+[tool.poetry.scripts]
+mmdb-whois-server = "mmdb_whois_server.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
